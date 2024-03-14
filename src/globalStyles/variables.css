@@ -1,0 +1,17 @@
+:root {
+  --Main_Colors_Linear: linear-gradient(
+    90deg,
+    rgb(12, 186, 241),
+    rgb(233, 92, 233) 100%
+  );
+  --Main_Colors_Purple: rgb(202, 106, 235);
+  --Main_Colors_Blue: rgb(25, 181, 241);
+  --Alerts_Success: rgb(0, 197, 102);
+  --Alerts_Error: rgb(255, 71, 71);
+  --Alerts_Warning: rgb(250, 204, 21);
+  --Greyscale_Black_100: rgb(24, 24, 27);
+  --Greyscale_Black_80: rgb(37, 37, 50);
+  --Greyscale_Grey_1: rgb(176, 176, 178);
+  --Greyscale_Grey_2: rgb(209, 209, 209);
+  --Greyscale_White: rgb(255, 255, 255);
+}
