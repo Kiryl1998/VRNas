@@ -1,12 +1,11 @@
 body {
-  background: var(--bg);
+  background: var(--Greyscale_Black_100);
   font-size: 16px;
-  line-height: 16px;
-  font-family: Montserrat, Roboto, sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  color: #fff;
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--Greyscale_White);
   font-weight: 500;
   padding-bottom: 20px;
 }
@@ -32,32 +31,23 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-input,
-button {
-  border: none;
-  background: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  font-family: Montserrat, Roboto, sans-serif;
+button:active {
+  transform: scale(0.99);
 }
-
 a {
-  color: #fff;
+  color: var(--Greyscale_White);
   text-decoration: none;
 }
-
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
+  color: var(--Greyscale_White);
 }
 
-.app {
-  width: 1274px;
-  margin: 0 auto;
+li:active {
+  transform: scale(0.98);
 }
 
 .flex {
@@ -78,32 +68,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-section {
-  border-radius: 6px;
-}
-
-button {
-  border-radius: 6px;
-  padding: 9px 20px;
-  font-weight: 600;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-button:hover {
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
-input[type='number'] {
-  -moz-appearance: textfield; /* Firefox */
 }
 
 input {

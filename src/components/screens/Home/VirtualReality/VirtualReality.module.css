@@ -1,0 +1,127 @@
+.VirtualReality {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 13px 0px 0px 0px;
+}
+.wrap {
+  max-width: 540px;
+  margin-bottom: 42px;
+}
+
+.title {
+  line-height: 83px;
+  margin-bottom: 12px;
+}
+.description {
+  margin-bottom: 32px;
+}
+.description p {
+  color: var(--Greyscale_Grey_2);
+}
+.happyClient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.client_item {
+  position: relative;
+  display: flex;
+}
+.client_list {
+  margin-left: -15px;
+}
+.client_list:first-child {
+  margin-left: 0px;
+}
+.wrapHappyClients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 277px;
+}
+.client_text {
+  color: var(--Greyscale_Grey_2);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  cursor: default;
+}
+.underline {
+  font-weight: 500;
+  color: var(--Greyscale_White);
+  position: relative;
+  margin-right: 10px;
+}
+.underline::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.125rem;
+  left: 50%;
+  width: 3rem;
+  height: 0.4375rem;
+  background: url(../../../../images/VirtualReality/line.png) center no-repeat;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.textHappyClients {
+  color: var(--Greyscale_Grey_2);
+  font-size: 20px;
+}
+.player {
+  width: 200px;
+  height: 130px;
+  background-color: rgb(33, 35, 46);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.player:hover img {
+  transform: scale(1.1);
+}
+.player::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  background: url(../../../../images/VirtualReality/play.svg) center no-repeat;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.player img {
+  transition: transform 0.6s ease 0s;
+}
+.player::before {
+  transition: transform 0.2s ease 0s;
+}
+.player:hover::before {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.wrapMenImg {
+  position: relative;
+}
+.wrapMenImg::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  background: var(--Main_Colors_Linear);
+  filter: blur(105px);
+  border-radius: 88% 12% 88% 12% / 20% 37% 63% 80%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+.men {
+  position: relative;
+  z-index: 9;
+}

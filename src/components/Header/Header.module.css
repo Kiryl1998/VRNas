@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 0px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.logo span {
+  font-size: 24px;
+}
+.nav {
+  width: 518px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  transition: 0.3s;
+}
+.link:hover {
+  background: linear-gradient(to right, rgb(12, 186, 241), rgb(233, 92, 233));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+.link:active {
+  background: linear-gradient(to right, rgb(233, 92, 233), rgb(12, 186, 241));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* .button:hover {
+  background: linear-gradient(90deg, rgb(233, 92, 233), rgb(12, 186, 241) 100%);
+}
+.button:active {
+  border-image: linear-gradient(
+    90deg,
+    rgb(12, 186, 241),
+    rgb(233, 92, 233) 100%
+  );
+} */

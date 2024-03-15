@@ -1,0 +1,41 @@
+.button {
+  font-family: 'Chakra Petch', sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.button span {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.button_gradient {
+  color: #fff;
+  letter-spacing: 1.5px;
+  padding: 18px 38px;
+  text-transform: uppercase;
+  position: relative;
+  background: linear-gradient(90deg, #0cbaf1 0, #e95ce9 100%);
+}
+.button_gradient span {
+  position: relative;
+  z-index: 2;
+}
+.button_gradient:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #0cbaf1 0, #e95ce9 100%);
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+.button_gradient:hover::before {
+  opacity: 1;
+}

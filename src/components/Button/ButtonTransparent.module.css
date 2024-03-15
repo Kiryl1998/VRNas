@@ -1,0 +1,49 @@
+.button {
+  background: none;
+  outline: none;
+  font-family: 'Chakra Petch', sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--Greyscale_Grey_2);
+  padding: 12px 24px;
+  transition: all 0.3s ease 0s;
+}
+.button span {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.button_transparent {
+  position: relative;
+  border: 1px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgb(12, 186, 241),
+    rgb(233, 92, 233) 100%
+  );
+  border-image-slice: 1;
+}
+.button_transparent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0cbaf1 0, #e95ce9 100%);
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+.button_transparent:hover::before {
+  opacity: 1;
+}
+.button_transparent:hover span {
+  color: var(--Greyscale_White);
+}
+.button_gradient:hover::before {
+  opacity: 1;
+}

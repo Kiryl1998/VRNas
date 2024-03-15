@@ -1,0 +1,116 @@
+.footer {
+  display: flex;
+}
+.wrap {
+  position: relative;
+  z-index: 100;
+}
+.wrap:first-child {
+  width: 430px;
+}
+.wrap:last-child {
+  display: flex;
+  justify-content: space-between;
+  width: 770px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 140px;
+  cursor: pointer;
+}
+.logo span {
+  font-size: 24px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 244px;
+}
+.wrapIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(90deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrapIcon:hover {
+  background: linear-gradient(90deg, rgb(12, 186, 241), rgb(233, 92, 233) 100%);
+}
+
+.wrapIcon:active {
+  transform: scale(0.98);
+  background: linear-gradient(90deg, rgb(233, 92, 233), rgb(12, 186, 241) 100%);
+}
+.icon {
+  font-size: 43px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+}
+.wrapIcon:hover .icon {
+  background: linear-gradient(to right, rgb(12, 186, 241), rgb(233, 92, 233));
+}
+
+.wrapIcon:active .icon {
+  transform: scale(0.98);
+  background: linear-gradient(90deg, rgb(233, 92, 233), rgb(12, 186, 241) 100%);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.item_title {
+  cursor: default;
+}
+.item_title:active {
+  transform: none;
+}
+.link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+}
+.link:hover a,
+svg {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link:hover a {
+  background: linear-gradient(to right, rgb(12, 186, 241), rgb(233, 92, 233));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+.link:active a {
+  background: linear-gradient(to right, rgb(233, 92, 233), rgb(12, 186, 241));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+.link:hover svg {
+  color: rgb(12, 186, 241);
+}
+.link:active svg {
+  color: rgb(233, 92, 233);
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
