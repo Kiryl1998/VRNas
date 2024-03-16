@@ -4,8 +4,8 @@
   padding: 55px 65px;
 }
 .wrapCards {
-  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -25px -50px;
 }
 .card {
@@ -30,6 +30,9 @@
 @media screen and (max-width: 769px) {
   .whyChooseUs {
     flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 1 50%;
   }
 }
 @media screen and (max-width: 1000px) {
