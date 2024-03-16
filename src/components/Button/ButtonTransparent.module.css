@@ -44,6 +44,3 @@
 .button_transparent:hover span {
   color: var(--Greyscale_White);
 }
-.button_gradient:hover::before {
-  opacity: 1;
-}

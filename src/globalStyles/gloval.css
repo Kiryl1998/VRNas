@@ -7,7 +7,6 @@ body {
   font-family: 'Chakra Petch', sans-serif;
   color: var(--Greyscale_White);
   font-weight: 500;
-  padding-bottom: 20px;
 }
 
 h1,
@@ -35,49 +34,29 @@ button:active {
   transform: scale(0.99);
 }
 a {
-  color: var(--Greyscale_White);
+  color: var(--Greyscale_Grey_2);
   text-decoration: none;
+}
+a:active {
+  transform: scale(0.99);
 }
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
-  color: var(--Greyscale_White);
 }
 
 li:active {
   transform: scale(0.98);
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.icon {
-  width: 12px;
-  height: 12px;
-}
-
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  max-width: 1240px;
+  padding: 15px;
+  margin: auto;
 }
 
 input {
   padding: 0;
-}
-
-.preloader {
-  flex-grow: 1;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

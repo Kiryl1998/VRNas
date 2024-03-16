@@ -1,8 +1,14 @@
 import VirtualReality from './VirtualReality/VirtualReality';
 import stylesHome from './Home.module.css';
+import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 
-const Home: React.FC = () => {
-  return <VirtualReality />;
+const Home = () => {
+  return (
+    <>
+      <VirtualReality />
+      <WhyChooseUs />
+    </>
+  );
 };
 
 export default Home;

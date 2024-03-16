@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  flex-wrap: nowrap;
   padding: 13px 0px 0px 0px;
 }
-.wrap {
+.content {
   max-width: 540px;
   margin-bottom: 42px;
+  cursor: default;
 }
 
 .title {
@@ -20,18 +22,26 @@
   color: var(--Greyscale_Grey_2);
 }
 .happyClient {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
-.client_item {
+.client_list {
   position: relative;
   display: flex;
 }
-.client_list {
-  margin-left: -15px;
+.client_item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -12px;
+  border: 1px solid black;
 }
-.client_list:first-child {
+.client_item:first-child {
   margin-left: 0px;
 }
 .wrapHappyClients {
@@ -106,15 +116,18 @@
 }
 
 .wrapMenImg {
+  max-width: 526px;
   position: relative;
+  margin-bottom: -4.8px;
 }
+
 .wrapMenImg::before {
   content: '';
   position: absolute;
   z-index: 1;
   top: 60%;
   left: 50%;
-  width: 100%;
+  width: 80%;
   height: 50%;
   background: var(--Main_Colors_Linear);
   filter: blur(105px);
@@ -124,4 +137,32 @@
 .men {
   position: relative;
   z-index: 9;
+  object-position: center;
+  min-height: 427px;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 920px) {
+  .happyClient {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .content {
+    width: 100%;
+  }
+
+  .VirtualReality {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 567px) {
+  .happyClient {
+    justify-content: center;
+  }
 }

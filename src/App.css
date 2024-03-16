@@ -1,5 +1,4 @@
 #root {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: url(./images/VirtualReality/bg.svg) top right no-repeat;
   position: relative;
 }

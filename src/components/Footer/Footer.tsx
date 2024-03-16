@@ -11,86 +11,139 @@ import { BsGeoAlt } from 'react-icons/bs';
 const Footer: React.FC = () => {
   return (
     <footer className={stylesFooter.footer}>
-      <div className={stylesFooter.wrap}>
+      <div className={stylesFooter.footer_social}>
         <div className={stylesFooter.logo}>
           <img src={LOGO} alt="Logo" />
           <span>VRNas</span>
         </div>
         <div className={stylesFooter.social}>
-          <div className={stylesFooter.wrapIcon}>
-            <FaGithub className={stylesFooter.icon} />
-          </div>
-          <div className={stylesFooter.wrapIcon}>
-            <FaInstagram className={stylesFooter.icon} />
-          </div>
-          <div className={stylesFooter.wrapIcon}>
-            <FaSquareXTwitter className={stylesFooter.icon} />
-          </div>
-          <div className={stylesFooter.wrapIcon}>
-            <CiYoutube className={stylesFooter.icon} />
-          </div>
+          <ul className={stylesFooter.social_list}>
+            <li className={stylesFooter.social_item}>
+              <a
+                className={[
+                  stylesFooter.social_link,
+                  stylesFooter.twitter,
+                ].join(' ')}
+                href=""
+              ></a>
+            </li>
+            <li className={stylesFooter.social_item}>
+              <a
+                className={[
+                  stylesFooter.social_link,
+                  stylesFooter.facebook,
+                ].join(' ')}
+                href=""
+              ></a>
+            </li>
+            <li className={stylesFooter.social_item}>
+              <a
+                className={[
+                  stylesFooter.social_link,
+                  stylesFooter.instagram,
+                ].join(' ')}
+                href=""
+              ></a>
+            </li>
+            <li className={stylesFooter.social_item}>
+              <a
+                className={[stylesFooter.social_link, stylesFooter.github].join(
+                  ' '
+                )}
+                href=""
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className={stylesFooter.wrap}>
-        <ul className={stylesFooter.item}>
+      <div className={stylesFooter.footer_contents}>
+        <ul className={stylesFooter.list}>
           <li className={[stylesFooter.item_title, 'heading_10'].join(' ')}>
             Quicklinks
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link className={stylesFooter.linkbtn} to={''}>Home</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Home
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Pricing Plan</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Pricing Plan
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Service</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Service
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Blog</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Blog
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Our Team</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Our Team
+            </Link>
           </li>
         </ul>
-        <ul className={stylesFooter.item}>
+        <ul className={stylesFooter.list}>
           <li className={[stylesFooter.item_title, 'heading_10'].join(' ')}>
             Support
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>About us</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              About us
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Contact us</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Contact us
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>FAQ</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              FAQ
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Tems & Conditions</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Tems & Conditions
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}>Privacy Policy</Link>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}>
+              Privacy Policy
+            </Link>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <Link to={''}></Link>
+          <li className={[stylesFooter.v, 'body_1'].join(' ')}>
+            <Link className={stylesFooter.link} to={''}></Link>
           </li>
         </ul>
-        <ul className={stylesFooter.item}>
+        <ul className={stylesFooter.list}>
           <li className={[stylesFooter.item_title, 'heading_10'].join(' ')}>
             Need Help?
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
             <BsGeoAlt />
-            <a href="https://www.google.ru/maps/search/Tanjung+Sari+Street+no.48,+Pontianak+City/@-0.0352231,109.2491481,12z/data=!3m1!4b1?entry=ttu">
+            <a
+              className={stylesFooter.link}
+              href="https://www.google.ru/maps/search/Tanjung+Sari+Street+no.48,+Pontianak+City/@-0.0352231,109.2491481,12z/data=!3m1!4b1?entry=ttu"
+            >
               Tanjung Sari Street no.48, Pontianak City
             </a>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
             <HiOutlineMail />
-            <a href="mailto:Support@VRNas.com">Support@VRNas.com</a>
+            <a className={stylesFooter.link} href="mailto:Support@VRNas.com">
+              Support@VRNas.com
+            </a>
           </li>
-          <li className={[stylesFooter.link, 'body_1'].join(' ')}>
-            <FiPhoneCall /> <a href="tel:+123 456 7890">+123 456 7890</a>
+          <li className={[stylesFooter.item, 'body_1'].join(' ')}>
+            <FiPhoneCall />
+            <a className={stylesFooter.link} href="tel:+123 456 7890">
+              +123 456 7890
+            </a>
           </li>
         </ul>
       </div>

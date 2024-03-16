@@ -6,9 +6,11 @@ import AppRoutes from './components/Routes/Routes';
 function App() {
   return (
     <>
-      <Header />
-      <AppRoutes />
-      <Footer />
+      <div className="container">
+        <Header />
+        <AppRoutes />
+        <Footer />
+      </div>
     </>
   );
 }

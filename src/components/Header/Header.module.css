@@ -14,13 +14,16 @@
   font-size: 24px;
 }
 .nav {
-  width: 518px;
+  display: flex;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(1.875rem, -1.903rem + 7.87vw, 4rem);
 }
 .item {
   display: flex;
-  justify-content: space-between;
 }
-
 .link {
   transition: 0.3s;
 }
@@ -38,6 +41,7 @@
   color: transparent;
   animation: rainbow 5s linear infinite;
 }
+
 @keyframes rainbow {
   0% {
     background-position: 0% 100%;
@@ -47,14 +51,8 @@
   }
 }
 
-
-/* .button:hover {
-  background: linear-gradient(90deg, rgb(233, 92, 233), rgb(12, 186, 241) 100%);
+@media screen and (max-width: 769px) {
+  .nav {
+    display: none;
+  }
 }
-.button:active {
-  border-image: linear-gradient(
-    90deg,
-    rgb(12, 186, 241),
-    rgb(233, 92, 233) 100%
-  );
-} */

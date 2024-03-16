@@ -1,6 +1,5 @@
 .heading_1 {
-  font-size: 64px;
-  line-height: auto;
+  font-size: clamp(3rem, 2.636rem + 1.82vw, 4rem);
   font-weight: 600;
 }
 .heading_2 {
@@ -20,7 +19,6 @@
 }
 .heading_5 {
   font-size: 32px;
-  line-height: auto;
   font-weight: 600;
 }
 .heading_6 {

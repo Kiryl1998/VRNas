@@ -1,0 +1,22 @@
+.btn_menu_arrow {
+  border: transparent;
+  background: transparent;
+  padding: 0;
+  transition: 0.3s ease 0s;
+}
+.btn_menu_arrow::before {
+  content: '';
+  width: 10px;
+  height: 5px;
+  padding: 10px 0px 10px 0px;
+  display: block;
+  background: url(../../images/header/arrow_down_nav.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.active {
+  transform: rotateX(180deg);
+}
