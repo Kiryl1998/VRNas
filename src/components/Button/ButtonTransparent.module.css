@@ -38,9 +38,18 @@
   opacity: 0;
   transition: all 0.3s ease 0s;
 }
-.button_transparent:hover::before {
-  opacity: 1;
-}
+
 .button_transparent:hover span {
   color: var(--Greyscale_White);
+}
+
+@media (hover: hover) {
+  .button_transparent:hover::before {
+    opacity: 1;
+  }
+}
+@media (hover: none) {
+  .button_transparent:active::before {
+    opacity: 0;
+  }
 }

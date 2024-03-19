@@ -135,14 +135,12 @@ svg {
 }
 .item:hover a {
   background: linear-gradient(to right, rgb(12, 186, 241), rgb(233, 92, 233));
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: rainbow 5s linear infinite;
 }
 .item:active a {
   background: linear-gradient(to right, rgb(233, 92, 233), rgb(12, 186, 241));
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: rainbow 5s linear infinite;

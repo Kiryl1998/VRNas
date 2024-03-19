@@ -1,0 +1,142 @@
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 200px;
+  padding-bottom: 168px;
+}
+
+.img {
+  position: relative;
+}
+.img img {
+  position: relative;
+  z-index: 2;
+}
+.img::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5%;
+  left: 0;
+  background-color: #252532;
+  width: 73%;
+  height: 76%;
+  z-index: 0;
+}
+.gradient_bg::before {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 85%;
+  height: 50%;
+  background: linear-gradient(
+    98.54deg,
+    rgba(28, 196, 249, 0.8) 0.72%,
+    rgba(254, 105, 254, 0.8) 90.69%
+  );
+  filter: blur(105px);
+  border-radius: 88% 12% 88% 12% / 20% 37% 63% 80%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  z-index: 1;
+}
+
+.aboutUs__media {
+  width: 45%;
+  position: relative;
+}
+.img_glasses {
+  height: 127px;
+  width: 196px;
+  position: absolute;
+  background-color: rgb(33, 35, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  right: 5%;
+  bottom: -5%;
+  z-index: 3;
+}
+.img_glasses img {
+  width: 130px;
+  height: 88px;
+}
+.img_glasses::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../../../../images/VirtualReality/play.svg) center no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.img_glasses:hover img {
+  transform: scale(1.1);
+}
+.img_glasses img {
+  transition: transform 0.6s ease 0s;
+}
+.img_glasses::before {
+  transition: transform 0.2s ease 0s;
+}
+.img_glasses:hover::before {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.content {
+  width: 47%;
+  cursor: default;
+}
+.title {
+  text-transform: uppercase;
+  display: inline-block;
+  background: var(--Main_Colors_Linear);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+.second_title {
+  font-size: clamp(2rem, 0.222rem + 3.7vw, 3rem);
+}
+.description {
+  color: var(--Greyscale_Grey_1);
+  margin-bottom: 24px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+.item {
+  background: url(../../../../images/AboutUs/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: default;
+}
+.item:active {
+  transform: scale(1);
+}
+@media screen and (max-width: 769px) {
+  .aboutUs {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .aboutUs__media {
+    width: 100%;
+  }
+  .img_glasses {
+    right: 0;
+    bottom: -2%;
+  }
+  .content {
+    width: 100%;
+  }
+}

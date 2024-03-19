@@ -1,0 +1,135 @@
+.wrapCard {
+  position: relative;
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+.serviceCard {
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(#252532, #252532) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0, transparent 100%);
+  padding: 38px 32px 25px;
+  height: 100%;
+  z-index: 2;
+}
+.wrapCard:nth-child(2) {
+  top: 60px;
+}
+.wrapCard:nth-child(3) {
+  top: 120px;
+}
+
+.wrapCard:nth-child(5) {
+  top: 60px;
+}
+.wrapCard:nth-child(6) {
+  top: 120px;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 0,
+      #0db9f0 0,
+      #0db9f0 1px,
+      transparent 1px
+    ),
+    linear-gradient(to right, #0db9f0, #e85ce9),
+    radial-gradient(
+      circle at 0 100%,
+      transparent 0,
+      #e85ce9 0,
+      #e85ce9 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, #e85ce9, #e95de9),
+    radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e95de9 0,
+      #e95de9 1px,
+      transparent 1px
+    ),
+    linear-gradient(to left, #e95de9, #0cb9f0),
+    radial-gradient(
+      circle at 100% 0,
+      transparent 0,
+      #0cb9f0 0,
+      #0cb9f0 1px,
+      transparent 1px
+    ),
+    linear-gradient(to top, #0cb9f0, #0db9f0);
+  background-size: 1px 1px, calc(100% - 2px) 1px, 1px 1px, 1px calc(100% - 2px);
+  background-position: top left, top center, top right, center right,
+    bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+
+.img_service {
+  margin-bottom: 60px;
+}
+.btnCard {
+  width: 100%;
+  padding: 0px 64px 0px 0px;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease 0s;
+}
+
+.description_card p {
+  color: var(--Greyscale_Grey_1);
+}
+
+@media (hover: hover) {
+  .wrapCard:hover .active {
+    transition: opacity 0.3s ease 0s;
+    opacity: 0.1;
+  }
+  .serviceCard:hover:before {
+    opacity: 1;
+  }
+  .serviceCard:hover .btnCard {
+    opacity: 1;
+    visibility: visible;
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapCard {
+    flex: 0 0 50%;
+  }
+  .wrapCard:nth-child(2) {
+    top: 0px;
+  }
+  .wrapCard:nth-child(3) {
+    top: 0px;
+  }
+
+  .wrapCard:nth-child(5) {
+    top: 0px;
+  }
+  .wrapCard:nth-child(6) {
+    top: 0px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .wrapCard {
+    flex: 1 1 100%;
+  }
+}
