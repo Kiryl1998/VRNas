@@ -1,6 +1,6 @@
 .service {
   position: relative;
-  padding-bottom: 133px;
+  padding-bottom: clamp(3.125rem, 1.534rem + 7.95vw, 7.5rem);
 }
 .service::before {
   content: '';

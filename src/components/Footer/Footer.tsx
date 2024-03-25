@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
             Need Help?
           </li>
           <li className={[stylesFooter.item, 'body_1'].join(' ')}>
-            <BsGeoAlt />
+            <BsGeoAlt className={stylesFooter.content_icon} />
             <a
               className={stylesFooter.link}
               href="https://www.google.ru/maps/search/Tanjung+Sari+Street+no.48,+Pontianak+City/@-0.0352231,109.2491481,12z/data=!3m1!4b1?entry=ttu"
@@ -134,13 +134,13 @@ const Footer: React.FC = () => {
             </a>
           </li>
           <li className={[stylesFooter.item, 'body_1'].join(' ')}>
-            <HiOutlineMail />
+            <HiOutlineMail className={stylesFooter.content_icon} />
             <a className={stylesFooter.link} href="mailto:Support@VRNas.com">
               Support@VRNas.com
             </a>
           </li>
           <li className={[stylesFooter.item, 'body_1'].join(' ')}>
-            <FiPhoneCall />
+            <FiPhoneCall className={stylesFooter.content_icon} />
             <a className={stylesFooter.link} href="tel:+123 456 7890">
               +123 456 7890
             </a>

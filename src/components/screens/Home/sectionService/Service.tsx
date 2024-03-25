@@ -6,18 +6,6 @@ interface Props {
   // Define props here
 }
 const Service: React.FC<Props> = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = (event: any) => {
-      setWidth(event.target.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  console.log(width);
   return (
     <section className={stylesService.service}>
       <div className={stylesService.topService}>

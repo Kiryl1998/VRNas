@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
-  padding-top: 200px;
-  padding-bottom: 168px;
+  padding-top: clamp(3.125rem, 1.534rem + 7.95vw, 7.5rem);
+  padding-bottom: clamp(3.125rem, 1.534rem + 7.95vw, 7.5rem);
+  gap: clamp(0.625rem, -5.375rem + 12.5vw, 4rem);
 }
 
 .img {
@@ -42,7 +43,7 @@
 }
 
 .aboutUs__media {
-  width: 45%;
+  flex: 0 1 50%;
   position: relative;
 }
 .img_glasses {
@@ -89,7 +90,7 @@
   transform: translate(-50%, -50%) scale(1.2);
 }
 .content {
-  width: 47%;
+  flex: 0 1 50%;
   cursor: default;
 }
 .title {
