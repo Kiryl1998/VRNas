@@ -13,7 +13,6 @@
     linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0, transparent 100%);
   padding: 38px 32px 25px;
   height: 100%;
-  z-index: 2;
 }
 .wrapCard:nth-child(2) {
   top: 60px;
@@ -131,5 +130,60 @@
 @media screen and (max-width: 769px) {
   .wrapCard {
     flex: 1 1 100%;
+    padding: 0 7.5px;
+    z-index: 1;
+  }
+  .serviceCard {
+    padding: 20px;
+    z-index: 2;
+  }
+  .serviceCard::before {
+    z-index: 1;
+  }
+  .serviceCard_top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    z-index: 3;
+  }
+  .serviceCard_top::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    display: block;
+    font-size: 20px;
+    transition: 0.3s ease 0s;
+  }
+  .serviceCard .activeArrowBtn::after {
+    transform: rotateX(180deg);
+  }
+  .img_service {
+    margin: 0;
+  }
+  .card_title {
+    flex: 1 1 auto;
+  }
+
+  .btnCard {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    padding: 0;
+    justify-content: left;
+    margin-top: 20px;
+  }
+  .description_wrap {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    max-height: 217px;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+  }
+  .description_hiden {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease 0s;
   }
 }

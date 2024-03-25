@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ButtonTransparent from '../../Button/ButtonTransparent';
 import stylesServiceCard from './ServiceCard.module.css';
 interface Props {
@@ -7,10 +8,17 @@ interface Props {
 }
 
 const ServiceCard: React.FC<Props> = ({ title, description, url }) => {
+  const [active, setActive] = useState(false);
   return (
     <div className={stylesServiceCard.wrapCard}>
       <div className={stylesServiceCard.serviceCard}>
-        <div>
+        <div
+          className={[
+            stylesServiceCard.serviceCard_top,
+            active && stylesServiceCard.activeArrowBtn,
+          ].join(' ')}
+          onClick={() => setActive(!active)}
+        >
           <div className={stylesServiceCard.img_service}>
             <img src={url} alt="" />
           </div>
@@ -24,7 +32,12 @@ const ServiceCard: React.FC<Props> = ({ title, description, url }) => {
             {title}
           </div>
         </div>
-        <div>
+        <div
+          className={[
+            stylesServiceCard.description_wrap,
+            !active ? stylesServiceCard.description_hiden : '',
+          ].join(' ')}
+        >
           <div className={stylesServiceCard.description_card}>
             <p className={['body_2', stylesServiceCard.active].join(' ')}>
               {description}
