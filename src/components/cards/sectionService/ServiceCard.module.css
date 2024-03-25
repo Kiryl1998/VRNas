@@ -157,6 +157,9 @@
   .serviceCard .activeArrowBtn::after {
     transform: rotateX(180deg);
   }
+  .activeArrowBtn::before{
+    opacity: 1;
+  }
   .img_service {
     margin: 0;
   }

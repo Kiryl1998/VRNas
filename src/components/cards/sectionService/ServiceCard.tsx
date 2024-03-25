@@ -11,7 +11,12 @@ const ServiceCard: React.FC<Props> = ({ title, description, url }) => {
   const [active, setActive] = useState(false);
   return (
     <div className={stylesServiceCard.wrapCard}>
-      <div className={stylesServiceCard.serviceCard}>
+      <div
+        className={[
+          stylesServiceCard.serviceCard,
+          active && stylesServiceCard.activeArrowBtn,
+        ].join(' ')}
+      >
         <div
           className={[
             stylesServiceCard.serviceCard_top,
