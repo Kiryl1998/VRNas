@@ -1,5 +1,4 @@
 import VirtualReality from './VirtualReality/VirtualReality';
-import stylesHome from './Home.module.css';
 import Service from './sectionService/Service';
 import AboutUs from './AboutUs/AboutUs';
 import About from './About/About';

@@ -1,15 +1,12 @@
 import stylesWhyChooseUs from './WhyChooseUs.module.css';
 import IMAGE_HUMAN from '../../../../images/WhyChooseUs/Image.png';
 import VIAR_GLASSES from '../../../../images/WhyChooseUs/ViarGlasses.png';
-import { useState } from 'react';
 import { data } from './dataCard';
 import Card from './card';
 interface Props {
   // Define props here
 }
 const WhyChooseUs: React.FC<Props> = () => {
-  const [active, setActive] = useState(false);
-
   return (
     <section className={stylesWhyChooseUs.whyChooseUs}>
       <div className={stylesWhyChooseUs.flexColum}>
@@ -22,7 +19,11 @@ const WhyChooseUs: React.FC<Props> = () => {
           </h3>
           <ul className={stylesWhyChooseUs.list}>
             {data.map((item) => (
-              <Card key={item.title} title={item.title} description={item.description} />
+              <Card
+                key={item.title}
+                title={item.title}
+                description={item.description}
+              />
             ))}
           </ul>
         </div>

@@ -1,8 +1,5 @@
 import stylesFooter from './Footer.module.css';
 import LOGO from '../../assets/Logo.png';
-import { FaGithub, FaInstagram } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
-import { CiYoutube } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
 import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';

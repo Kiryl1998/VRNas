@@ -1,7 +1,6 @@
 import stylesService from './Service.module.css';
 import ServiceCard from '../../../cards/sectionService/ServiceCard';
 import { cardsService } from '../../../cards/sectionService/data';
-import React, { useEffect, useState } from 'react';
 interface Props {
   // Define props here
 }
