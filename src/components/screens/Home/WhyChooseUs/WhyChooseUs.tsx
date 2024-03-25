@@ -22,7 +22,7 @@ const WhyChooseUs: React.FC<Props> = () => {
           </h3>
           <ul className={stylesWhyChooseUs.list}>
             {data.map((item) => (
-              <Card title={item.title} description={item.description} />
+              <Card key={item.title} title={item.title} description={item.description} />
             ))}
           </ul>
         </div>

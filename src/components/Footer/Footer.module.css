@@ -145,10 +145,10 @@ svg {
 .content_icon {
   margin-right: 5px;
 }
-.link:hover svg {
+.item:hover svg {
   color: rgb(12, 186, 241);
 }
-.link:active svg {
+.item:active svg {
   color: rgb(233, 92, 233);
 }
 @keyframes rainbow {
